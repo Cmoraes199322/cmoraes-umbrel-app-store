@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: cmoraes-hello-world
+name: Hello World
+tagline: Creando aplicaciones para un mundo mas conectado
+icon: https://cdn-icons-png.flaticon.com/512/725/725059.png
+category: Development
+version: "1.0.0"
+port: 4000
+description: >-
+  Prueba de desarrollo de apps store umbrel.
+
+developer: Cmoraes199322
+website: https://canariannode.uk/
+submitter: Cmoraes
+submission: https://github.com/Cmoraes199322/umbrel-community-app-store/tree/master/cmoraes199322-hello-world
+repo: https://github.com/Cmoraes199322/umbrel-community-app-store/tree/master/cmoraes199322-hello-world
+support: https://github.com/Cmoraes199322/umbrel-community-app-store/issues
+gallery:
+  - https://i.imgur.com/3dKfQRp.jpeg
+  - https://i.imgur.com/4dLfGHy.jpeg
+  - https://i.imgur.com/5eMhJkL.jpeg
+releaseNotes: >-
+  Primera version de prueba.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
