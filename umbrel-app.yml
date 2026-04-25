@@ -10,9 +10,9 @@ description: >-
   Mysterium Network es una red descentralizada de nodos VPN. 
   Al instalar este nodo, te conviertes en parte de la infraestructura 
   y recibes pagos en MYST por el tráfico que procesas.
-developer: cmoraes
+developer: Cmoraes199322
 website: https://mysterium.network/
-submitter: Cmoraes199322
+submitter: cmoraes
 submission: https://github.com/Cmoraes199322/umbrel-community-app-store
 repo: https://github.com/mysteriumnetwork/node
 support: https://github.com/mysteriumnetwork/node/issues
