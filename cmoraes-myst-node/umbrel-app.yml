@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: cmoraes-myst-node
+name: Mysterium Node
+tagline: Gana criptomonedas compartiendo tu ancho de banda.
+icon: https://mysterium.network/wp-content/uploads/2021/03/mysterium-logo-cube.png
+category: Networking
+version: "1.0.0"
+port: 4449
+description: >-
+  Mysterium Network es una red descentralizada de nodos VPN. 
+  Al instalar este nodo, te conviertes en parte de la infraestructura 
+  y recibes pagos en MYST por el tráfico que procesas.
+developer: Mysterium Network (Adaptado por Cmoraes)
+website: https://mysterium.network/
+submitter: Cmoraes
+submission: https://github.com/Cmoraes199322/umbrel-community-app-store
+repo: https://github.com/mysteriumnetwork/node
+support: https://github.com/mysteriumnetwork/node/issues
+gallery:
+  - https://static.wixstatic.com/media/5b19bf_70f93de8752d429f9acaad9ab250a5f8~mv2.png/v1/fill/w_239,h_239,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo.png
+releaseNotes: >-
+  Versión inicial con soporte NET_ADMIN para Umbrel.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
