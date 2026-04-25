@@ -2,7 +2,7 @@ manifestVersion: 1
 id: cmoraes-myst-node
 name: Mysterium Node
 tagline: Gana criptomonedas compartiendo tu ancho de banda.
-icon: https://mysterium.network/wp-content/uploads/2021/03/mysterium-logo-cube.png
+icon: https://static.wixstatic.com/media/5b19bf_5fecd0de6ccc4cb88aa1b4498562f2c6~mv2.png/v1/fill/w_269,h_269,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-4.png
 category: Networking
 version: "1.0.0"
 port: 4449
