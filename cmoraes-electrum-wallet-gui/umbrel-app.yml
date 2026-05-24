@@ -13,11 +13,11 @@ description: >-
 developer: Cmoraes199322
 website: https://electrum.org
 submitter: cmoraes
-submission: https://github.com/Cmoraes199322/umbrel-community-app-store
+submission: https://github.com
 repo: https://github.com
 support: https://github.com/issues
 gallery:
-  - https://electrum.orgimg/electrum-screenshot.png
+  - https://githubusercontent.com
 releaseNotes: >-
   Versión inicial de Electrum GUI con entorno noVNC integrado para la tienda de Umbrel.
 dependencies: []

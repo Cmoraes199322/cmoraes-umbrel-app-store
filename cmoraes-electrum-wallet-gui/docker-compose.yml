@@ -2,16 +2,17 @@ version: "3.7"
 
 services:
   app_proxy:
+    image: getumbrel/app-proxy:v1.0.1
     environment:
-      # Formato obligatorio de Umbrel: <id-del-manifiesto>_<nombre-del-servicio>_1
       APP_HOST: cmoraes-electrum-gui_server_1
       APP_PORT: 8080
+    restart: on-failure
 
   server:
     image: mpepping/electrum:latest
     user: "0:0"
     environment:
-      - VNC_PASSWD=money-printer-go-brrr  # Cambia esto por tu contraseña visual
+      - VNC_PASSWD=money-printer-go-brrr  # Cambia esto por tu contraseña visual segura
       - RESOLUTION=1280x720
     volumes:
       - "${APP_DATA_DIR}/data:/.electrum"
