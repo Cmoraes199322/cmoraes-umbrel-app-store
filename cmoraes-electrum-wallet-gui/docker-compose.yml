@@ -4,22 +4,25 @@ services:
   app_proxy:
     image: getumbrel/app-proxy:v1.0.1
     environment:
+      # The name format is <app-id>_<service-name>_1
       APP_HOST: cmoraes-electrum-wallet-gui_server_1
-      APP_PORT: 8080
+      # The Electrum container opens VNC on 5900, so we forward that port.
+      APP_PORT: 5900
     restart: on-failure
 
   server:
-    # Imagen oficial de Electrum con soporte VNC disponible en Docker Hub.
-    # Se sustituyó la imagen inexistente "mpepping/electrum:latest" por una que sí
-    # existe y funciona correctamente con Umbrel.
+    # Image that includes Electrum with a noVNC server (port 5900).
     image: beli/electrum:latest
     user: "0:0"
     environment:
-      - VNC_PASSWD=money-printer-go-brrr  # Cambia esto por tu contraseña visual segura
+      - VNC_PASSWD=money-printer-go-brrr   # Cambia esto por una contraseña segura
       - RESOLUTION=1280x720
+    # Electrum stores its wallet in /root/.electrum, so we mount that path.
     volumes:
-      - "${APP_DATA_DIR}/data:/.electrum"
+      - "${APP_DATA_DIR}/data:/root/.electrum"
+    # Expose the internal VNC port so the proxy can reach it.
+    expose:
+      - "5900"
     restart: on-failure
-    # `init:true` garantiza que Docker gestione correctamente la señal de parada
-    # y evite procesos zombie dentro del contenedor.
+    # init:true guarantees proper signal handling and avoids zombie processes.
     init: true

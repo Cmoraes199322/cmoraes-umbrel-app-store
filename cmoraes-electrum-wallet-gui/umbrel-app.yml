@@ -5,7 +5,8 @@ tagline: Billetera Bitcoin avanzada y aislada en tu navegador.
 icon: https://masterthecrypto.com/wp-content/uploads/2019/11/Electrum.jpg
 category: Bitcoin
 version: "4.5.5"
-port: 8080
+# The Electrum container we use exposes VNC on port 5900, so the manifest must also use 5900.
+port: 5900
 description: >-
   Ejecuta la interfaz gráfica oficial de Electrum Wallet en un entorno completamente aislado dentro de tu Umbrel.
   Ideal para gestionar fondos de forma avanzada sin exponer tu sistema operativo nativo.
