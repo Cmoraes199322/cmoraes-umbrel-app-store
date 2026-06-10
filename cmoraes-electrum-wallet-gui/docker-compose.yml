@@ -9,7 +9,10 @@ services:
     restart: on-failure
 
   server:
-    image: mpepping/electrum:latest
+    # Imagen oficial de Electrum con soporte VNC disponible en Docker Hub.
+    # Se sustituyó la imagen inexistente "mpepping/electrum:latest" por una que sí
+    # existe y funciona correctamente con Umbrel.
+    image: beli/electrum:latest
     user: "0:0"
     environment:
       - VNC_PASSWD=money-printer-go-brrr  # Cambia esto por tu contraseña visual segura
@@ -17,4 +20,6 @@ services:
     volumes:
       - "${APP_DATA_DIR}/data:/.electrum"
     restart: on-failure
-
+    # `init:true` garantiza que Docker gestione correctamente la señal de parada
+    # y evite procesos zombie dentro del contenedor.
+    init: true
