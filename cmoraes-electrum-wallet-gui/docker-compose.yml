@@ -6,12 +6,12 @@ services:
     environment:
       # The name format is <app-id>_<service-name>_1
       APP_HOST: cmoraes-electrum-wallet-gui_server_1
-      # The Electrum container opens VNC on 5900, so we forward that port.
-      APP_PORT: 5900
+      # The Electrum noVNC container serves its web UI on 8080.
+      APP_PORT: 8080
     restart: on-failure
 
   server:
-    # Image that includes Electrum with a noVNC server (port 5900).
+    # Image that includes Electrum with a noVNC server (port 8080).
     image: beli/electrum:latest
     user: "0:0"
     environment:
@@ -20,9 +20,9 @@ services:
     # Electrum stores its wallet in /root/.electrum, so we mount that path.
     volumes:
       - "${APP_DATA_DIR}/data:/root/.electrum"
-    # Expose the internal VNC port so the proxy can reach it.
+    # Expose the HTTP port that noVNC serves on.
     expose:
-      - "5900"
+      - "8080"
     restart: on-failure
     # init:true guarantees proper signal handling and avoids zombie processes.
     init: true
