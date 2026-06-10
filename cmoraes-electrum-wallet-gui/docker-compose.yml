@@ -4,7 +4,7 @@ services:
   app_proxy:
     image: getumbrel/app-proxy:v1.0.1
     environment:
-      APP_HOST: cmoraes-electrum-gui_server_1
+      APP_HOST: cmoraes-electrum-wallet-gui_server_1
       APP_PORT: 8080
     restart: on-failure
 

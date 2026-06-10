@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: cmoraes-electrum-gui
+id: cmoraes-electrum-wallet-gui
 name: Electrum GUI
 tagline: Billetera Bitcoin avanzada y aislada en tu navegador.
 icon: https://masterthecrypto.com/wp-content/uploads/2019/11/Electrum.jpg
@@ -7,8 +7,8 @@ category: Bitcoin
 version: "4.5.5"
 port: 8080
 description: >-
-  Ejecuta la interfaz gráfica oficial de Electrum Wallet en un entorno completamente aislado dentro de tu Umbrel. 
-  Ideal para gestionar fondos de forma avanzada sin exponer tu sistema operativo nativo. 
+  Ejecuta la interfaz gráfica oficial de Electrum Wallet en un entorno completamente aislado dentro de tu Umbrel.
+  Ideal para gestionar fondos de forma avanzada sin exponer tu sistema operativo nativo.
   Se conecta a través de la web usando noVNC seguro.
 developer: Cmoraes199322
 website: https://electrum.org
@@ -24,4 +24,3 @@ dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-
